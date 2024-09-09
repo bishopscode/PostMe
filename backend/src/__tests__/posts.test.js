@@ -51,14 +51,14 @@ describe('creating posts', () => {
 })
 
 const samplePosts = [
-  { title: 'Learning Programming', author: 'Happiness Opara', tags: ['redux'] },
-  { title: 'Learn React', author: 'Moses Nebechukwu', tags: ['react'] },
+  { title: 'Learning Redux', author: 'Moses Nebechukwu', tags: ['redux'] },
+  { title: 'Learn React Hooks', author: 'Happiness Opara', tags: ['react'] },
   {
-    title: 'PostMe',
-    author: 'Moses Happiness',
+    title: 'MERNStack Projects',
+    author: 'Moses Nebechukwu',
     tags: ['react', 'nodejs'],
   },
-  { title: 'Guide to MERNstack' },
+  { title: 'Guide to TypeScript' },
 ]
 
 let createdSamplePosts = []
