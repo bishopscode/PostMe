@@ -12,7 +12,7 @@ Please install the following, if you do not already have them installed:
 
 ## Install
 
-Husky may not find the `.git` directory when running `npm install`. In that case, just run `git init` in the root of the corresponding chapter folder.
+Husky may not find the `.git` directory when running `npm install`. In that case, just run `git init` in the root of the folder.
 
 ```bash
 git init
