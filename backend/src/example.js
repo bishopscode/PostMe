@@ -5,7 +5,7 @@ await initDatabase()
 
 const post = new Post({
   title: 'Hello Mongoose!',
-  author: 'Moses Nebechukwu',
+  author: 'Daniel Bugl',
   contents: 'This post is stored in a MongoDB database using Mongoose.',
   tags: ['mongoose', 'mongodb'],
 })

@@ -15,7 +15,7 @@ describe('creating posts', () => {
   test('with all parameters should succeed', async () => {
     const post = {
       title: 'Hello Mongoose!',
-      author: 'Moses Nebechukwu',
+      author: 'Daniel Bugl',
       contents: 'This post is stored in a MongoDB database using Mongoose.',
       tags: ['mongoose', 'mongodb'],
     }
@@ -29,7 +29,7 @@ describe('creating posts', () => {
 
   test('without title should fail', async () => {
     const post = {
-      author: 'Moses Nebechukwu',
+      author: 'Daniel Bugl',
       contents: 'Post with no title',
       tags: ['empty'],
     }
@@ -51,11 +51,11 @@ describe('creating posts', () => {
 })
 
 const samplePosts = [
-  { title: 'Learning Redux', author: 'Moses Nebechukwu', tags: ['redux'] },
-  { title: 'Learn React Hooks', author: 'Happiness Opara', tags: ['react'] },
+  { title: 'Learning Redux', author: 'Daniel Bugl', tags: ['redux'] },
+  { title: 'Learn React Hooks', author: 'Daniel Bugl', tags: ['react'] },
   {
-    title: 'MERNStack Projects',
-    author: 'Moses Nebechukwu',
+    title: 'Full-Stack React Projects',
+    author: 'Daniel Bugl',
     tags: ['react', 'nodejs'],
   },
   { title: 'Guide to TypeScript' },
@@ -102,7 +102,7 @@ describe('listing posts', () => {
   })
 
   test('should be able to filter posts by author', async () => {
-    const posts = await listPostsByAuthor('Moses Nebechukwu')
+    const posts = await listPostsByAuthor('Daniel Bugl')
     expect(posts.length).toBe(3)
   })
 
