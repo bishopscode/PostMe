@@ -14,8 +14,8 @@ import { Post } from '../db/models/post.js'
 describe('creating posts', () => {
   test('with all parameters should succeed', async () => {
     const post = {
-      title: 'Hello Mongoose!',
-      author: 'Daniel Bugl',
+      title: 'Hello Cyberfam!',
+      author: 'Moses Nebechukwu',
       contents: 'This post is stored in a MongoDB database using Mongoose.',
       tags: ['mongoose', 'mongodb'],
     }
@@ -29,7 +29,7 @@ describe('creating posts', () => {
 
   test('without title should fail', async () => {
     const post = {
-      author: 'Daniel Bugl',
+      author: 'Moses Nebechukwu',
       contents: 'Post with no title',
       tags: ['empty'],
     }
@@ -51,11 +51,11 @@ describe('creating posts', () => {
 })
 
 const samplePosts = [
-  { title: 'Learning Redux', author: 'Daniel Bugl', tags: ['redux'] },
-  { title: 'Learn React Hooks', author: 'Daniel Bugl', tags: ['react'] },
+  { title: 'Learning HTML5', author: 'Moses Nebechukwu', tags: ['HTML'] },
+  { title: 'Learn React Hooks', author: 'Moses Nebchukwu', tags: ['react'] },
   {
-    title: 'Full-Stack React Projects',
-    author: 'Daniel Bugl',
+    title: 'MERN-Stack Projects',
+    author: 'Happiness Opara',
     tags: ['react', 'nodejs'],
   },
   { title: 'Guide to TypeScript' },
@@ -102,7 +102,7 @@ describe('listing posts', () => {
   })
 
   test('should be able to filter posts by author', async () => {
-    const posts = await listPostsByAuthor('Daniel Bugl')
+    const posts = await listPostsByAuthor('Moses Nebechkwu')
     expect(posts.length).toBe(3)
   })
 

@@ -4,8 +4,8 @@ import { Post } from './db/models/post.js'
 await initDatabase()
 
 const post = new Post({
-  title: 'Hello Mongoose!',
-  author: 'Daniel Bugl',
+  title: 'Hello Cyberfam!',
+  author: 'Moses Nebechukwu',
   contents: 'This post is stored in a MongoDB database using Mongoose.',
   tags: ['mongoose', 'mongodb'],
 })
@@ -15,7 +15,7 @@ await post.save()
 const createdPost = await post.save()
 
 await Post.findByIdAndUpdate(createdPost._id, {
-  $set: { title: 'Hello again, Mongoose!' },
+  $set: { title: 'Hello again, Cyberfam!' },
 })
 
 const posts = await Post.find()
