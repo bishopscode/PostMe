@@ -4,7 +4,7 @@ services:
     image: mongo
     ports:
       - '27017:27017'
-  blog-backend:
+  postme-backend:
     build: backend/
     environment:
       - PORT=3001
@@ -13,7 +13,7 @@ services:
       - '3001:3001'
     depends_on:
       - blog-database
-  blog-frontend:
+  postme-frontend:
     build:
       context: .
       args:
@@ -21,4 +21,4 @@ services:
     ports:
       - '3000:80'
     depends_on:
-      - blog-backend
+      - postme-backend
