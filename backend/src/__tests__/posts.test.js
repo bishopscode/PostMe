@@ -16,7 +16,7 @@ let testUser = null
 let samplePosts = []
 
 beforeAll(async () => {
-  testUser = await createUser({ username: 'bishop', password: 'sailor2' })
+  testUser = await createUser({ username: 'dan', password: 'hunter2' })
   samplePosts = [
     { title: 'Learning Redux', author: testUser._id, tags: ['redux'] },
     { title: 'Learn React Hooks', author: testUser._id, tags: ['react'] },
@@ -31,7 +31,7 @@ beforeAll(async () => {
 describe('creating posts', () => {
   test('with all parameters should succeed', async () => {
     const post = {
-      title: 'Hello Cyberfam!',
+      title: 'Hello Mongoose!',
       contents: 'This post is stored in a MongoDB database using Mongoose.',
       tags: ['mongoose', 'mongodb'],
     }
