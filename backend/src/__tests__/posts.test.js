@@ -16,7 +16,7 @@ let testUser = null
 let samplePosts = []
 
 beforeAll(async () => {
-  testUser = await createUser({ username: 'dan', password: 'hunter2' })
+  testUser = await createUser({ username: 'bishop', password: 'sailor2' })
   samplePosts = [
     { title: 'Learning Redux', author: testUser._id, tags: ['redux'] },
     { title: 'Learn React Hooks', author: testUser._id, tags: ['react'] },
